@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const subDomainWhiteList = ["ressler", "cooper", "reddington"];
+const subDomainWhiteList = ["ressler", "cooper", "reddington", "fourbit", "algosolver"];
 
 app.get("/", (req, res) => {
   const subdomain = req.subdomains[0];
